@@ -53,7 +53,7 @@
 🎯 Future Goals
 - Implement video calling functionality for real-time face-to-face chats
 
-- Build and integrate ChaturBot — an AI-powered chatbot that interacts with users naturally [Work is in Progrss]
+- Build and integrate ChaturBot — an AI-powered chatbot that interacts with users naturally **🚧 [ WORK IN PROGRESS ] 🚧**  
 
 - Add group chats and enhanced conversation management
 
