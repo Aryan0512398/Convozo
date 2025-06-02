@@ -6,6 +6,7 @@ import connectDb from './lib/dbConnect.js';
 import userRouter from './routes/userRoutes.js';
 import messageRouter from './routes/messageRoutes.js';
 import { Server } from 'socket.io';
+import geminiRouter from './routes/geminiRoutes.js';
 
 // Create express app and HTTP server
 const app=express();
@@ -45,6 +46,7 @@ app.use(cors());
 app.use("/api/status",(req,res)=> res.send(`Server is live`))
 app.use("/api/auth",userRouter)
 app.use("/api/messages",messageRouter)
+app.use("/api/ai",geminiRouter)
 
 
 // Connection to mongoDb

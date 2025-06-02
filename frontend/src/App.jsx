@@ -32,7 +32,7 @@ const App = () => {
         <Route path="/" element={authUser ? <HomePage currBg={currBg} setCurrBg={setCurrBg}></HomePage> : <Navigate to="/login"></Navigate>} />
         <Route path="/login" element={ !authUser ? <LoginPage></LoginPage> : <Navigate to="/"></Navigate>} />
         <Route path="/profile" element={authUser ?<ProfilePage></ProfilePage> : <Navigate to="/login"></Navigate>} />
-        <Route path="/chatur" element={authUser ? <Chatur></Chatur> : <Navigate to="/login"></Navigate>} />
+        <Route path="/chatur" element={authUser  ? <Chatur></Chatur> : <Navigate to="/login"></Navigate>} />
       </Routes>
     </div>
   );
